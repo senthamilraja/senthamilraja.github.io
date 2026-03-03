@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senthamil Raja | Data Science & AI Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <ul class="mobile-nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#casestudies">Case Studies</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. HOME SECTION -->
+    <section id="home" class="hero">
+        <canvas id="particles-canvas"></canvas>
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+            <div class="floating-icon" style="--delay: 0s; --x: 10%; --y: 20%;"><i class="fab fa-python"></i></div>
+            <div class="floating-icon" style="--delay: 1s; --x: 85%; --y: 15%;"><i class="fas fa-brain"></i></div>
+            <div class="floating-icon" style="--delay: 2s; --x: 20%; --y: 70%;"><i class="fas fa-database"></i></div>
+            <div class="floating-icon" style="--delay: 0.5s; --x: 75%; --y: 65%;"><i class="fas fa-cloud"></i></div>
+            <div class="floating-icon" style="--delay: 1.5s; --x: 50%; --y: 40%;"><i class="fas fa-robot"></i></div>
+            <div class="floating-icon" style="--delay: 2.5s; --x: 30%; --y: 85%;"><i class="fas fa-chart-line"></i></div>
+        </div>
+        <div class="hero-content">
+            <p class="greeting">Hello, I'm</p>
+            <h1 class="hero-name">
+                <span class="gradient-text">Senthamil Raja</span>
+            </h1>
+            <p class="hero-role">Data Science | AI | Analyst</p>
+            <div class="typewriter">
+                <span class="typed-text"></span>
+                <span class="cursor">|</span>
+            </div>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#resume" class="btn btn-secondary">Download Resume</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- 2. ABOUT ME SECTION -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <div class="glow-border"></div>
+                        <img src="Images\tamil.jpg" alt="Senthamil Raja">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Data Science & AI Professional</h3>
+                    <p>I am a passionate Data Science and AI professional with expertise in machine learning, deep learning, and data analytics. I transform complex data into actionable insights and build intelligent solutions that drive business value.</p>
+                    <p>With a strong foundation in statistical analysis and programming, I specialize in developing predictive models, natural language processing applications, and computer vision solutions. My journey involves continuous learning and staying
+                        updated with cutting-edge technologies.</p>
+                    <p>I believe in the power of data to solve real-world problems and am committed to delivering solutions that make a meaningful impact.</p>
+
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="50">6+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="15">15+</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="20">10+</span>
+                            <span class="stat-label">Skills</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="3">3+</span>
+                            <span class="stat-label">Years Exp</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="timeline">
+                <h3 class="timeline-title">My Journey</h3>
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Data Science & AI</h4>
+                            <p class="timeline-date">Present</p>
+                            <p>Actively building real-world projects in Machine Learning, Deep Learning, and Data Analytics. Focused on applying AI techniques to solve practical problems using data-driven approaches.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Data Analyst</h4>
+                            <p class="timeline-date">2023 - 2025</p>
+                            <p>Worked on hands-on projects involving data cleaning, exploratory data analysis, visualization, and model building. Gained experience with Python, SQL, Pandas, NumPy, Matplotlib, and basic ML models.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Data Science & Machine Learning Training</h4>
+                            <p class="timeline-date">2021 - 2022</p>
+                            <p>Completed structured learning in Python, Data Analysis, Machine Learning fundamentals, and basic Deep Learning concepts. Built initial projects that sparked interest in AI-driven solutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- 3. SKILLS SECTION -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills-grid">
+                <!-- Programming -->
+                <div class="skill-card" data-category="programming">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Programming</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="progress-bar">
+                                <div class="progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-icon">
+                    </div>
+                    <h3>Databases & Data Handling</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL</span>
+                            <div class="progress-bar">
+                                <div class="progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MongoDB</span>
+                            <div class="progress-bar">
+                                <div class="progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Analysis & Visualization -->
+                <div class="skill-card" data-category="Data Analysis & Visualization">
+                    <div class="skill-icon"><i class="fas fa-chart-pie"></i></div>
+                    <h3>Data Analysis & Visualization</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Pandas</span>
+                            <div class="progress-bar">
+                                <div class="progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">NumPy</span>
+                            <div class="progress-bar">
+                                <div class="progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Matplotlib</span>
+                            <div class="progress-bar">
+                                <div class="progress" data-progress="78"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Seaborn</span>
+                            <div class="progress-bar">
+                                <div class="progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Machine Learning -->
+                <div class="skill-card" data-category="ml">
+                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Machine Learning & AI</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">TensorFlow</span>
+                            <div class="progress-bar">
+                                <div class="progress" data-progress="72"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PyTorch</span>
+                            <div class="progress-bar">
+                                <div class="progress" data-progress="68"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Scikit-learn</span>
+                            <div class="progress-bar">
+                                <div class="progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Keras</span>
+                            <div class="progress-bar">
+                                <div class="progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="skill-card" data-category="tools">
+                    <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Tools & Platforms</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">TensorFlow</span>
+                            <div class="progress-bar">
+                                <div class="progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PyTorch</span>
+                            <div class="progress-bar">
+                                <div class="progress" data-progress="82"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Tableau</span>
+                            <div class="progress-bar">
+                                <div class="progress" data-progress="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">AWS</span>
+                            <div class="progress-bar">
+                                <div class="progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Development & Version Control -->
+                <div class="skill-card" data-category="development">
+                    <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+
+                    <h3>Development & Version Control</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Git</span>
+                            <div class="progress-bar">
+                                <div class="progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">GitHub</span>
+                            <div class="progress-bar">
+                                <div class="progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">VS Code</span>
+                            <div class="progress-bar">
+                                <div class="progress" data-progress="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Jupyter Notebook</span>
+                            <div class="progress-bar">
+                                <div class="progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <!-- 4. PROJECTS SECTION -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="Artificial Intelligence">Artificial Intelligence</button>
+                <button class="filter-btn" data-filter="Data Analysis">Data Analysis</button>
+                <button class="filter-btn" data-filter="Data Science">Data Science</button>
+                <button class="filter-btn" data-filter="Deep Learning">Deep Learning</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="Data Science">
+                    <div class="project-image">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Crop Growth Pattern Analysis Using Multispectral Time-Series</h3>
+                        <p>Developed an AI-based system to analyze crop growth patterns using multispectral satellite time-series data. Applied attention-based neural networks to capture temporal variations and improve prediction accuracy.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>NumPy</span>
+                            <span>Pandas</span>
+                            <span>TensorFlow</span>
+                            <span>Deep Learning</span>
+                            <span>Time-Series Analysis</span>
+                        </div>
+                        <button class="view-details-btn" data-project="project1">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="Artificial Intelligence">
+                    <div class="project-image">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Sequential Emotion Transition Recognition in Social Media</h3>
+                        <p>Built a transformer-based model to analyze emotion transitions in social media conversations. The system identifies emotional patterns over time instead of single-message sentiment.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>NLP</span>
+                            <span>Deep Learning</span>
+                            <span>PyTorch</span>
+                        </div>
+                        <button class="view-details-btn" data-project="project2">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-category="Data Analysis">
+                    <div class="project-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Data Visualization Dashboard for Business Insights</h3>
+                        <p>Created an interactive dashboard to visualize business KPIs, trends, and performance metrics, helping users make data-driven decisions.</p>
+                        <div class="project-tech">
+                            <span>Tableau</span>
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Matplotlib</span>
+                            <span>Seaborn</span>
+                        </div>
+                        <button class="view-details-btn" data-project="project3">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-category="Data Science">
+                    <div class="project-image">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Student Performance Prediction System</h3>
+                        <p>Designed a machine learning model to predict student academic performance based on historical data, attendance, and internal scores.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Scikit-learn</span>
+                            <span>Machine Learning</span>
+                            <span>EDA</span>
+                        </div>
+                        <button class="view-details-btn" data-project="project4">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card" data-category="Deep Learning">
+                    <div class="project-image">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Image Classification Using Deep Learning</h3>
+                        <p>Implemented a CNN-based image classification model to classify images into multiple categories with improved accuracy.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>Keras</span>
+                            <span>OpenCV</span>
+                        </div>
+                        <button class="view-details-btn" data-project="project5">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card" data-category="Data Analysis">
+                    <div class="project-image">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>SQL-Based Data Analysis System</h3>
+                        <p>Developed SQL queries and analysis pipelines to extract insights from relational databases using joins, aggregations, and filtering.</p>
+                        <div class="project-tech">
+                            <span>MySQL</span>
+                            <span>SQL</span>
+                            <span>Data Analysis</span>
+                        </div>
+                        <button class="view-details-btn" data-project="project6">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <h2 id="modalTitle">Project Title</h2>
+                <p id="modalDescription">Project description goes here...</p>
+                <div class="modal-tech">
+                    <h4>Technologies Used:</h4>
+                    <div id="modalTech"></div>
+                </div>
+                <div class="modal-results">
+                    <h4>Key Results:</h4>
+                    <ul id="modalResults"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. EXPERIENCE SECTION -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+
+            <div class="timeline experience-timeline">
+
+                <!-- Experience 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="company-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI & Data Science Projects</h3>
+                        <h4>Academic & Self-Initiated</h4>
+                        <p class="timeline-date">2024 – Present</p>
+                        <ul class="experience-details">
+                            <li>Developed machine learning and deep learning models for real-world datasets</li>
+                            <li>Worked on projects involving time-series analysis, NLP, and computer vision</li>
+                            <li>Applied data preprocessing, feature engineering, and model evaluation techniques</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="company-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Data Analysis & Visualization</h3>
+                        <h4>Academic Practice</h4>
+                        <p class="timeline-date">2023 – 2024</p>
+                        <ul class="experience-details">
+                            <li>Performed exploratory data analysis (EDA) using Python and SQL</li>
+                            <li>Created interactive dashboards and visual reports using Tableau and Matplotlib</li>
+                            <li>Extracted insights from structured datasets to support decision-making</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="company-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>AI & Machine Learning Training</h3>
+                        <h4>Coursework & Hands-on Learning</h4>
+                        <p class="timeline-date">2022 – 2023</p>
+                        <ul class="experience-details">
+                            <li>Learned Python, statistics, and machine learning fundamentals</li>
+                            <li>Implemented supervised and unsupervised learning algorithms</li>
+                            <li>Built mini-projects to strengthen practical understanding of AI concepts</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. CERTIFICATIONS SECTION -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+
+            <div class="certifications-grid" id="certificationsGrid">
+                <!-- Certificates will be dynamically loaded from certificate folder -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. RESUME SECTION -->
+    <section id="resume" class="section">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+
+            <div class="resume-content">
+                <div class="resume-preview">
+                    <div class="resume-card">
+                        <div class="resume-header">
+                            <h3>Senthamil Raja</h3>
+                            <p>AI & Data Science Student</p>
+                        </div>
+
+                        <!-- Summary -->
+                        <div class="resume-section">
+                            <h4><i class="fas fa-briefcase"></i> Summary</h4>
+                            <p>
+                                Aspiring AI & Data Science professional with strong foundations in machine learning, deep learning, data analysis, and Python programming. Experienced in academic and self-initiated projects involving time-series analysis, NLP, computer vision, and data
+                                visualization. Passionate about applying AI techniques to solve real-world problems.
+                            </p>
+                        </div>
+
+                        <!-- Education -->
+                        <div class="resume-section">
+                            <h4><i class="fas fa-graduation-cap"></i> Education</h4>
+                            <div class="resume-item">
+                                <h5>B.Tech – Artificial Intelligence & Data Science</h5>
+                                <p>Tagore Institute of Engineering and Technology | 2022 – 2026</p>
+                            </div>
+                        </div>
+
+                        <!-- Skills -->
+                        <div class="resume-section">
+                            <h4><i class="fas fa-cogs"></i> Key Skills</h4>
+                            <div class="skill-tags">
+                                <span>Python</span>
+                                <span>Data Analysis</span>
+                                <span>Machine Learning</span>
+                                <span>Deep Learning</span>
+                                <span>Time-Series Analysis</span>
+                                <span>NLP</span>
+                                <span>Computer Vision</span>
+                                <span>SQL</span>
+                                <span>MySQL</span>
+                                <span>Pandas</span>
+                                <span>NumPy</span>
+                                <span>Scikit-learn</span>
+                                <span>TensorFlow</span>
+                                <span>PyTorch</span>
+                                <span>Tableau</span>
+                                <span>Matplotlib</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Download -->
+                <div class="resume-download">
+                    <div class="download-card">
+                        <i class="fas fa-file-pdf"></i>
+                        <h3>Download Resume</h3>
+                        <p>View my complete academic and project-based resume</p>
+                        <a href="Resume/D_Senthamil_Raja.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i> Download PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. BLOG SECTION -->
+    <section id="blog" class="section">
+        <div class="container">
+            <h2 class="section-title">Blog / Articles</h2>
+
+            <div class="blog-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="tutorial">Tutorials</button>
+                <button class="filter-btn" data-filter="insights">Insights</button>
+                <button class="filter-btn" data-filter="news">Updates</button>
+            </div>
+
+            <div class="blog-grid">
+
+                <!-- Blog 1 -->
+                <article class="blog-card" data-category="tutorial">
+                    <div class="blog-image">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Tutorial</span>
+                        <h3>Introduction to Artificial Intelligence for Beginners</h3>
+                        <p>An easy-to-understand introduction to AI concepts, applications, and tools for students starting their AI journey.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-clock"></i> 7 min read</span>
+                            <span><i class="far fa-calendar"></i> Feb 2025</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog 2 -->
+                <article class="blog-card" data-category="tutorial">
+                    <div class="blog-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Tutorial</span>
+                        <h3>Exploratory Data Analysis Using Python</h3>
+                        <p>Step-by-step explanation of EDA techniques using Pandas, NumPy, Matplotlib, and real datasets.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-clock"></i> 9 min read</span>
+                            <span><i class="far fa-calendar"></i> Jan 2025</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog 3 -->
+                <article class="blog-card" data-category="insights">
+                    <div class="blog-image">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Insights</span>
+                        <h3>Machine Learning vs Deep Learning Explained Simply</h3>
+                        <p>A clear comparison between ML and DL with real-world examples suitable for students and beginners.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-clock"></i> 8 min read</span>
+                            <span><i class="far fa-calendar"></i> Jan 2025</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog 4 -->
+                <article class="blog-card" data-category="insights">
+                    <div class="blog-image">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Insights</span>
+                        <h3>How I Learn Data Science as a Student</h3>
+                        <p>My personal learning roadmap covering Python, statistics, machine learning, projects, and practice tips.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-clock"></i> 6 min read</span>
+                            <span><i class="far fa-calendar"></i> Dec 2024</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog 5 -->
+                <article class="blog-card" data-category="news">
+                    <div class="blog-image">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Updates</span>
+                        <h3>Career Roles in AI & Data Science for Freshers</h3>
+                        <p>An overview of entry-level roles like Data Analyst, ML Engineer, and AI Engineer with required skills.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-clock"></i> 5 min read</span>
+                            <span><i class="far fa-calendar"></i> Dec 2024</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog 6 -->
+                <article class="blog-card" data-category="news">
+                    <div class="blog-image">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Updates</span>
+                        <h3>Essential Skills for AI & Data Science Students</h3>
+                        <p>A practical list of must-have technical and analytical skills every AI & Data Science student should learn.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-clock"></i> 6 min read</span>
+                            <span><i class="far fa-calendar"></i> Nov 2024</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. CONTACT SECTION -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>Feel free to reach out for collaborations, projects, or just to say hello!</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>senthamilraja555@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Chennai, India</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/senthamil555" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/senthamilraja" class="social-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" name="from_name" id="name" required placeholder="Your Name">
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="from_email" id="email" required placeholder="your.email@example.com">
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="5" required placeholder="Your message..."></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div class="form-success" id="formSuccess">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Message Sent!</h3>
+                        <p>Thank you for reaching out. I'll get back to you soon.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Senthamil Raja. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
