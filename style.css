@@ -739,7 +739,7 @@ h3 {
 
 .progress-bar {
     height: 8px;
-    background: var(--secondary);
+    background: #d8dce3;
     border-radius: 4px;
     overflow: hidden;
 }
@@ -1657,4 +1657,5 @@ footer p {
     .modal-body {
         padding: 25px;
     }
+
 }
