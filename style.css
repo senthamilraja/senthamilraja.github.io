@@ -739,7 +739,7 @@ h3 {
 
 .progress-bar {
     height: 8px;
-    background: #d8dce3;
+    background-color: #d8dce3;
     border-radius: 4px;
     overflow: hidden;
 }
@@ -1659,3 +1659,4 @@ footer p {
     }
 
 }
+
